@@ -1,6 +1,7 @@
 FROM n8nio/n8n
 
 # Required to let n8n pick up Render ENV vars
+ENV N8N_USER_MANAGEMENT_DISABLED=true
 ENV N8N_HOST=0.0.0.0
 ENV N8N_PORT=5678
 ENV N8N_BASIC_AUTH_ACTIVE=true
