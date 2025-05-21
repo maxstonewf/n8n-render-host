@@ -1,10 +1,11 @@
-services:
-  - type: web
-    name: n8n-agent
-    env: docker
-    plan: free
-    envVars:
-      - key: N8N_BASIC_AUTH_USER
-        value: admin
-      - key: N8N_BASIC_AUTH_PASSWORD
-        value: ms800869
+envVars:
+  - key: DB_TYPE
+    value: sqlite
+  - key: N8N_BASIC_AUTH_ACTIVE
+    value: true
+  - key: N8N_BASIC_AUTH_USER
+    value: admin
+  - key: N8N_BASIC_AUTH_PASSWORD
+    value: ms800869
+  - key: WEBHOOK_URL
+    value: https://n8n-render-host-nju6.onrender.com
